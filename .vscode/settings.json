@@ -1,0 +1,5 @@
+{
+  "css.validate": false,
+  "editor.renderWhitespace": "trailing",
+  "files.trimTrailingWhitespace": true
+}
