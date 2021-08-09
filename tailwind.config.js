@@ -11,6 +11,7 @@ module.exports = {
       4: "40px",
       5: "50px",
       6: "60px",
+      avatar: "64px",
     },
     colors: {
       transparent: "transparent",
