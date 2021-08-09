@@ -2,9 +2,7 @@ import React from 'react';
 import './App.css';
 import { LogoBar } from './components/LogoBar';
 import hamburgerMenu from './assets/HamburgerMenu.svg';
-import { Copyright } from './components/Copyright';
 import { MainArticle } from './components/MainArticle';
-import { UnifeedLogo } from './components/UnifeedLogo';
 import { Article } from './components/Article';
 import avatar1 from './assets/Avatar1.png';
 import photo1 from './assets/Article1.png';
@@ -12,6 +10,7 @@ import avatar2 from './assets/Avatar2.png';
 import photo2 from './assets/Article2.png';
 import avatar3 from './assets/Avatar3.png';
 import photo3 from './assets/Article3.png';
+import { Footer } from './components/Footer';
 
 const App = () => {
   return (
@@ -47,8 +46,7 @@ const App = () => {
         description="From SEO to integrating with Paid Advertising, this article covers it all"
         descriptionAlt="A table of assorted printed merchandise"
       />
-      <UnifeedLogo />
-      <Copyright />
+      <Footer />
     </div>
   );
 }
