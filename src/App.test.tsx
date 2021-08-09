@@ -7,3 +7,9 @@ test('renders the logo', async () => {
 
   expect(await screen.findByAltText(/Unifeed logo/)).toBeInTheDocument();
 });
+
+
+test('renders the hamburger menu', async () => {
+  render(<App />);
+  expect(await screen.findByAltText(/Menu/)).toBeInTheDocument();
+})
