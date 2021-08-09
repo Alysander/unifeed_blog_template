@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { LogoBar } from './components/LogoBar';
 import hamburgerMenu from './assets/HamburgerMenu.svg';
+import { Copyright } from './components/Copyright';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <LogoBar>
         <img src={hamburgerMenu} alt="Menu" />
       </LogoBar>
+      <Copyright />
     </div>
   );
 }
