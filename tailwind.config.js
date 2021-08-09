@@ -11,6 +11,7 @@ module.exports = {
       4: "40px",
       5: "50px",
       6: "60px",
+      7: "70px",
       "200px": "200px",
       "260px": "260px",
       avatar: "64px",
