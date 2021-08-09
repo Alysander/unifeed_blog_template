@@ -1,5 +1,6 @@
 {
   "css.validate": false,
   "editor.renderWhitespace": "trailing",
-  "files.trimTrailingWhitespace": true
+  "files.trimTrailingWhitespace": true,
+  "cSpell.words": ["Unifeed"]
 }
