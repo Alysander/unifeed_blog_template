@@ -1,41 +1,53 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import './App.css';
 import { LogoBar } from './components/LogoBar';
 import hamburgerMenu from './assets/HamburgerMenu.svg';
 import { Copyright } from './components/Copyright';
-import mainArticleImage from './assets/MainArticleImage.png';
-import userAvatar from "./assets/UserAvatar.png";
+import { MainArticle } from './components/MainArticle';
+import { UnifeedLogo } from './components/UnifeedLogo';
+import { Article } from './components/Article';
+import avatar1 from './assets/Avatar1.png';
+import photo1 from './assets/Article1.png';
+import avatar2 from './assets/Avatar2.png';
+import photo2 from './assets/Article2.png';
+import avatar3 from './assets/Avatar3.png';
+import photo3 from './assets/Article3.png';
 
-function App() {
+const App = () => {
   return (
     <div className="container px-2 py-4 ">
       <LogoBar>
         <img src={hamburgerMenu} alt="Menu" />
       </LogoBar>
-      <a href="#">
-        <article className="my-4">
-          <img src={mainArticleImage} alt="Twitter app on phone" className="rounded-sm" />
-          <h1>
-            Weekly Newsletter: Tweets for Higher Engagements
-          </h1>
-          <p className="text-xl text-mediumGray mb-1">
-            In this weekly newsletter, we will be covering ten types of engaging tweets.
-            This is the guide if you're just starting out on Twitter.
-          </p>
-          <div className="flex">
-            <img src={userAvatar} className="rounded-full w-avatar h-avatar flex-initial" alt="Avatar" />
-            <div className="flex-grow flex flex-col justify-center ml-2 font-semibold">
-              <div>
-                Jessica Andrews
-              </div>
-              <div className="text-mediumGray">
-                Content Manager
-              </div>
-            </div>
-          </div>
-        </article>
-      </a>
+      <MainArticle />
+      <Article
+        heading="7 Tips for Organic Traffic"
+        author="Spencer David"
+        authorJob="SEO Specialist"
+        authorAvatarPath={avatar1}
+        photoPath={photo1}
+        description="From SEO to integrating with Paid Advertising, this article covers it all."
+        descriptionAlt="Google search screenshot"
+      />
+      <Article
+        heading="How To Start Your Own Business"
+        author="Sara Frey"
+        authorJob="Business Leader"
+        authorAvatarPath={avatar2}
+        photoPath={photo2}
+        description="Starting your own business in 2021 has never been easier"
+        descriptionAlt="A laptop with a PowerPoint presentation open"
+      />
+      <Article
+        heading="5 Tips for Better Branding"
+        author="David Suns"
+        authorJob="Brand Manager"
+        authorAvatarPath={avatar3}
+        photoPath={photo3}
+        description="From SEO to integrating with Paid Advertising, this article covers it all"
+        descriptionAlt="A table of assorted printed merchandise"
+      />
+      <UnifeedLogo />
       <Copyright />
     </div>
   );
