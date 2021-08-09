@@ -18,3 +18,11 @@ test('shows the copyright', async () => {
   render(<App />);
   expect(await screen.findByText("Unifeed © 2017 All Copyrights Not Reserved")).toBeInTheDocument();
 })
+
+describe('twitter blog post', () => {
+  test('shows the heading', async () => {
+    render(<App />)
+    expect(await screen.findByTitle("Weekly Newsletter: Tweets for Higher Engagements")).toBeInTheDocument();
+
+  });
+})
