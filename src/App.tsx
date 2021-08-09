@@ -14,7 +14,7 @@ import { Footer } from './components/Footer';
 
 const App = () => {
   return (
-    <div className="container px-2 py-4 ">
+    <div className="container px-2 py-4 mx-auto md:px-4">
       <LogoBar>
         <img src={hamburgerMenu} alt="Menu" />
       </LogoBar>
