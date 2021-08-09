@@ -13,3 +13,8 @@ test('renders the hamburger menu', async () => {
   render(<App />);
   expect(await screen.findByAltText(/Menu/)).toBeInTheDocument();
 })
+
+test('shows the copyright', async () => {
+  render(<App />);
+  expect(await screen.findByText("Unifeed © 2017 All Copyrights Not Reserved")).toBeInTheDocument();
+})
