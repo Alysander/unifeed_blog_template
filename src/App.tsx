@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { LogoBar } from './components/LogoBar';
-import { hamburgerMenu } from './assets/HamburgerMenu.svg';
+import hamburgerMenu from './assets/HamburgerMenu.svg';
 
 function App() {
   return (
