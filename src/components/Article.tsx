@@ -12,7 +12,17 @@ interface IArticleProps {
 const Article = (props: IArticleProps) => (
 
     <article className="my-4">
-        <img src={props.photoPath} alt={props.descriptionAlt} className="rounded-sm" />
+        {
+            /*
+                As per spec:
+                Small screens: Behave like a normal image
+                Medium screens: set overflow-hidden, use a transforms to simulate background-cover
+                Large screens: Behave like a normal image
+            */
+        }
+        <div className="rounded-lg md:max-h-200px md:overflow-hidden lg:max-h-full lg:overflow-initial" >
+            <img src={props.photoPath} alt={props.descriptionAlt} className="md:transform md:-translate-y-1/2 lg:transform-none" />
+        </div>
         <h1>
             {props.heading}
         </h1>

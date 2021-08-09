@@ -5,7 +5,10 @@ import userAvatar from "../assets/UserAvatar.png";
 const MainArticle = () => (
     <a href="">
         <article className="my-4">
-            <img src={mainArticleImage} alt="Twitter app on phone" className="rounded-sm" />
+            <div className="rounded-lg md:max-h-260px md:overflow-hidden lg:max-h-full lg:overflow-initial" >
+                <img src={mainArticleImage} alt={"Twitter app on phone"} className="md:transform md:-translate-y-1/2 lg:transform-none" />
+            </div>
+
             <h1>
                 Weekly Newsletter: Tweets for Higher Engagements
             </h1>
