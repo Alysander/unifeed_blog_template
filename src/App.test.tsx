@@ -20,9 +20,8 @@ test('shows the copyright', async () => {
 })
 
 describe('twitter blog post', () => {
-  test('shows the heading', async () => {
+  test('shows the heading', () => {
     render(<App />)
-    expect(await screen.findByTitle("Weekly Newsletter: Tweets for Higher Engagements")).toBeInTheDocument();
-
+    expect(screen.getByRole("heading", { name: "Weekly Newsletter: Tweets for Higher Engagements" })).toBeInTheDocument();
   });
 })
