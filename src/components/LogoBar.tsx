@@ -1,11 +1,10 @@
 import React from 'react';
-import logo from '../assets/Logo.svg'
-
+import { UnifeedLogo } from './UnifeedLogo';
 
 const LogoBar = ({ children }: { children?: React.ReactNode }) => (
 
     <div className="flex">
-        <img src={logo} alt="Unifeed logo" className="flex-initial" />
+        <UnifeedLogo />
         <div className="flex-1" />
         <div className="flex-initial">
             {children}
