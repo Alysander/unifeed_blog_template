@@ -6,11 +6,12 @@
 @layer base {
   body {
     font-family: "Manrope";
+    font-weight: 500;
   }
   @font-face {
     font-family: "Manrope", sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-display: swap;
     src: url(https://fonts.gstatic.com/s/manrope/v4/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FN_C-bk.woff2)
       format("woff2");
