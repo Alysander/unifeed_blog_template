@@ -11,7 +11,7 @@ interface IArticleProps {
 }
 const Article = (props: IArticleProps) => (
 
-    <article className="my-4">
+    <article className="my-4 md:my-5">
         {
             /*
                 As per spec:
@@ -20,10 +20,10 @@ const Article = (props: IArticleProps) => (
                 Large screens: Behave like a normal image
             */
         }
-        <div className="rounded-lg md:max-h-200px md:overflow-hidden lg:max-h-full lg:overflow-initial" >
+        <div className="rounded-lg md:max-h-200px md:overflow-hidden md:mb-3 lg:max-h-full lg:overflow-initial " >
             <img src={props.photoPath} alt={props.descriptionAlt} className="md:transform md:-translate-y-1/2 lg:transform-none" />
         </div>
-        <h1>
+        <h1 className="md:my-1">
             {props.heading}
         </h1>
         <p className="text-xl text-mediumGray mb-2">
