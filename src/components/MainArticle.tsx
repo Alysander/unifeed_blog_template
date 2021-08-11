@@ -17,7 +17,7 @@ const MainArticle = (props: IArticleProps) => {
     const { photoPath, photoAlt, ...others } = props;
 
     return (
-        <article className="flex flex-col my-4 md:my-5">
+        <article className="flex flex-col">
             <img
                 src={props.photoPath}
                 alt={props.photoAlt}
