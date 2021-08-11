@@ -10,6 +10,10 @@ import avatar2 from './assets/Avatar2.png';
 import photo2 from './assets/Article2.png';
 import avatar3 from './assets/Avatar3.png';
 import photo3 from './assets/Article3.png';
+import mainArticleImage from './assets/MainArticleImage.png';
+import userAvatar from "./assets/UserAvatar.png";
+
+
 import { Footer } from './components/Footer';
 
 const App = () => {
@@ -18,7 +22,17 @@ const App = () => {
       <LogoBar>
         <img src={hamburgerMenu} alt="Menu" />
       </LogoBar>
-      <MainArticle />
+      <MainArticle
+        heading="Weekly Newsletter: Tweets for Higher Engagements
+      "
+        author="Jessica Andrews"
+        authorJob="Content Manager"
+        authorAvatarPath={userAvatar}
+        photoPath={mainArticleImage}
+        description="In this weekly newsletter, we will be covering ten types of engaging tweets.
+      This is the guide if you're just starting out on Twitter."
+        descriptionAlt="Twitter app on phone"
+      />
       <Article
         heading="7 Tips for Organic Traffic"
         author="Spencer David"
