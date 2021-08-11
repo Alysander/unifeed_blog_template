@@ -11,7 +11,7 @@ import mainArticleImage from '../assets/MainArticleImage.png';
 import userAvatar from "../assets/UserAvatar.png";
 
 const ArticleList = () => (
-    <div className="flex flex-col gap-4 md:gap-5">
+    <div className="flex flex-col gap-4 md:gap-5 lg:grid lg:grid-cols-3">
         <MainArticle
             heading="Weekly Newsletter: Tweets for Higher Engagements"
             author="Jessica Andrews"

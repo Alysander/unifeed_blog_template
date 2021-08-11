@@ -17,11 +17,11 @@ const MainArticle = (props: IArticleProps) => {
     const { photoPath, photoAlt, ...others } = props;
 
     return (
-        <article className="flex flex-col">
+        <article className="flex flex-col lg:col-span-3 lg:flex-row lg:gap-5 lg:mb-4">
             <img
                 src={props.photoPath}
                 alt={props.photoAlt}
-                className="rounded-lg md:h-260px md:object-cover md:object-center"
+                className="rounded-lg md:h-260px md:object-cover md:object-center lg:object-fit"
             />
             <ArticleMeta {...others} />
         </article>
