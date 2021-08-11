@@ -31,7 +31,7 @@ const App = () => {
         photoPath={mainArticleImage}
         description="In this weekly newsletter, we will be covering ten types of engaging tweets.
       This is the guide if you're just starting out on Twitter."
-        descriptionAlt="Twitter app on phone"
+        photoAlt="Twitter app on phone"
       />
       <Article
         heading="7 Tips for Organic Traffic"
@@ -40,7 +40,7 @@ const App = () => {
         authorAvatarPath={avatar1}
         photoPath={photo1}
         description="From SEO to integrating with Paid Advertising, this article covers it all."
-        descriptionAlt="Google search screenshot"
+        photoAlt="Google search screenshot"
       />
       <Article
         heading="How To Start Your Own Business"
@@ -49,7 +49,7 @@ const App = () => {
         authorAvatarPath={avatar2}
         photoPath={photo2}
         description="Starting your own business in 2021 has never been easier"
-        descriptionAlt="A laptop with a PowerPoint presentation open"
+        photoAlt="A laptop with a PowerPoint presentation open"
       />
       <Article
         heading="5 Tips for Better Branding"
@@ -58,7 +58,7 @@ const App = () => {
         authorAvatarPath={avatar3}
         photoPath={photo3}
         description="From SEO to integrating with Paid Advertising, this article covers it all"
-        descriptionAlt="A table of assorted printed merchandise"
+        photoAlt="A table of assorted printed merchandise"
       />
       <Footer />
     </div>

@@ -5,7 +5,7 @@ import { ArticleMeta } from './ArticleMeta';
 interface IArticleProps {
     heading: string,
     description: string,
-    descriptionAlt: string,
+    photoAlt: string,
     photoPath: string,
     author: string,
     authorJob: string,
@@ -14,14 +14,14 @@ interface IArticleProps {
 
 
 const MainArticle = (props: IArticleProps) => {
-    const { photoPath, descriptionAlt, ...others } = props;
+    const { photoPath, photoAlt, ...others } = props;
 
     return (
         <a href="">
             <article className="flex flex-col my-4 md:my-5">
                 <img
                     src={props.photoPath}
-                    alt={props.descriptionAlt}
+                    alt={props.photoAlt}
                     className="rounded-lg md:h-260px md:object-cover md:object-center"
                 />
                 <ArticleMeta {...others} />
