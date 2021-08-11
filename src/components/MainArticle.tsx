@@ -18,10 +18,12 @@ const MainArticle = (props: IArticleProps) => {
 
     return (
         <a href="">
-            <article className="my-4 md:my-5">
-                <div className="rounded-lg md:max-h-260px md:overflow-hidden lg:max-h-full lg:overflow-initial" >
-                    <img src={props.photoPath} alt={props.descriptionAlt} className="md:transform md:-translate-y-1/2 lg:transform-none" />
-                </div>
+            <article className="flex flex-col my-4 md:my-5">
+                <img
+                    src={props.photoPath}
+                    alt={props.descriptionAlt}
+                    className="rounded-lg md:h-260px md:object-cover md:object-center"
+                />
                 <ArticleMeta {...others} />
             </article>
         </a>

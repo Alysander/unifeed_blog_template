@@ -14,18 +14,12 @@ const Article = (props: IArticleProps) => {
     const { photoPath, descriptionAlt, ...others } = props;
 
     return (
-        <article className="my-4 md:my-5">
-            {
-                /*
-                    As per spec:
-                    Small screens: Behave like a normal image
-                    Medium screens: set overflow-hidden, use a transforms to simulate background-cover
-                    Large screens: Behave like a normal image
-                */
-            }
-            <div className="rounded-lg md:max-h-200px md:overflow-hidden md:mb-3 lg:max-h-full lg:overflow-initial " >
-                <img src={props.photoPath} alt={props.descriptionAlt} className="md:transform md:-translate-y-1/2 lg:transform-none" />
-            </div>
+        <article className="flex flex-col my-4 md:my-5">
+
+            <img src={props.photoPath}
+                alt={props.descriptionAlt}
+                className="rounded-lg md:h-200px md:mb-3 md:object-cover md:object-center"
+            />
 
             <ArticleMeta {...others} />
         </article>
