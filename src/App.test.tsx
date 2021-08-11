@@ -24,12 +24,18 @@ describe("the hamburger menu", () => {
 
   test('renders the hamburger menu', async () => {
     render(<App />);
-    expect(await screen.findByAltText(/Menu/)).toBeInTheDocument();
+    expect(await screen.findByAltText(/Menu button/)).toBeInTheDocument();
   })
-  test('clicking the menu button opens the menu', () => {
+  test('clicking the menu button opens the menu', async () => {
     render(<App />);
     const menu = screen.getByAltText(/Menu/);
 
     expect(menu).toBeInTheDocument()
+    menu.click();
+
+    expect(await screen.findByText("Home")).toBeInTheDocument();
+    expect(await screen.findByText("Features")).toBeInTheDocument();
+    expect(await screen.findByText("Pricing")).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Subscribe" })).toBeInTheDocument();
   })
 })
