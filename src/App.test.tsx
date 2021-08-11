@@ -5,9 +5,8 @@ import App from './App';
 test('renders the logo', async () => {
   render(<App />);
 
-  expect(await screen.findByAltText(/Unifeed logo/)).toBeInTheDocument();
+  expect(screen.getAllByAltText(/Unifeed logo/)[0]).toBeInTheDocument();
 });
-
 
 test('renders the hamburger menu', async () => {
   render(<App />);
