@@ -19,12 +19,12 @@ const ArticleMeta = (props: IArticleMetaProps) => (
         <div className="flex">
             <img src={props.authorAvatarPath} className="rounded-full w-avatar h-avatar flex-initial" alt="Avatar" />
             <div className="flex-grow flex flex-col justify-center ml-2 font-semibold">
-                <div>
+                <h2>
                     {props.author}
-                </div>
-                <div className="text-mediumGray">
+                </h2>
+                <p className="text-mediumGray">
                     {props.authorJob}
-                </div>
+                </p>
             </div>
         </div>
     </div>
