@@ -10,7 +10,7 @@ interface IArticleMetaProps {
 
 const ArticleMeta = (props: IArticleMetaProps) => (
     <div>
-        <h1 className="md:my-1">
+        <h1 className="md:mb-1">
             {props.heading}
         </h1>
         <p className="text-xl text-mediumGray mb-2">
