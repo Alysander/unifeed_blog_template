@@ -17,16 +17,14 @@ const MainArticle = (props: IArticleProps) => {
     const { photoPath, photoAlt, ...others } = props;
 
     return (
-        <a href="">
-            <article className="flex flex-col my-4 md:my-5">
-                <img
-                    src={props.photoPath}
-                    alt={props.photoAlt}
-                    className="rounded-lg md:h-260px md:object-cover md:object-center"
-                />
-                <ArticleMeta {...others} />
-            </article>
-        </a>
+        <article className="flex flex-col my-4 md:my-5">
+            <img
+                src={props.photoPath}
+                alt={props.photoAlt}
+                className="rounded-lg md:h-260px md:object-cover md:object-center"
+            />
+            <ArticleMeta {...others} />
+        </article>
     )
 }
 export { MainArticle }
