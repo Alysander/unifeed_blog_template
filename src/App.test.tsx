@@ -8,11 +8,6 @@ test('renders the logo', async () => {
   expect(screen.getAllByAltText(/Unifeed logo/)[0]).toBeInTheDocument();
 });
 
-test('renders the hamburger menu', async () => {
-  render(<App />);
-  expect(await screen.findByAltText(/Menu/)).toBeInTheDocument();
-})
-
 test('shows the copyright', async () => {
   render(<App />);
   expect(await screen.findByText("Unifeed © 2017 All Copyrights Not Reserved")).toBeInTheDocument();
@@ -23,4 +18,18 @@ describe('twitter blog post', () => {
     render(<App />)
     expect(screen.getByRole("heading", { name: "Weekly Newsletter: Tweets for Higher Engagements" })).toBeInTheDocument();
   });
+})
+
+describe("the hamburger menu", () => {
+
+  test('renders the hamburger menu', async () => {
+    render(<App />);
+    expect(await screen.findByAltText(/Menu/)).toBeInTheDocument();
+  })
+  test('clicking the menu button opens the menu', () => {
+    render(<App />);
+    const menu = screen.getByAltText(/Menu/);
+
+    expect(menu).toBeInTheDocument()
+  })
 })
