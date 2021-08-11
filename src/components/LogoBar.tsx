@@ -3,13 +3,12 @@ import { UnifeedLogo } from './UnifeedLogo';
 
 const LogoBar = ({ children }: { children?: React.ReactNode }) => (
 
-    <div className="flex my-4 md:my-7">
+    <header className="flex justify-between my-4 md:my-7">
         <UnifeedLogo />
-        <div className="flex-1" />
-        <div className="flex-initial">
+        <div>
             {children}
         </div>
-    </div>
+    </header>
 
 )
 
