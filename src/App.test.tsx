@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import App from './App';
 
 test('renders the logo', async () => {
@@ -33,9 +33,11 @@ describe("the hamburger menu", () => {
     expect(menu).toBeInTheDocument()
     menu.click();
 
-    expect(await screen.findByText("Home")).toBeVisible();
-    expect(await screen.findByText("Features")).toBeVisible();
-    expect(await screen.findByText("Pricing")).toBeVisible();
-    expect(screen.getByRole("button", { name: "Subscribe" })).toBeVisible();
+    expect(screen.getAllByText("Home")[0]).toBeVisible();
+
+    expect(screen.getAllByText("Features")[0]).toBeVisible();
+    expect(screen.getAllByText("Pricing")[0]).toBeVisible();
+    expect(screen.getAllByRole("button", { name: "Subscribe" })[0]).toBeVisible();
+
   })
 })
