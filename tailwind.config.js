@@ -12,6 +12,7 @@ module.exports = {
       5: "50px",
       6: "60px",
       7: "70px",
+      unset: "unset",
       "1px": "1px",
       "200px": "200px",
       "260px": "260px",
