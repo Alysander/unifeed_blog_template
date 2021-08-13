@@ -1,7 +1,7 @@
 import React from 'react';
 import { UnifeedLogo } from './UnifeedLogo';
 
-const LogoBar = ({ children }: { children?: React.ReactNode }) => (
+const Header = ({ children }: { children?: React.ReactNode }) => (
 
     <header className="flex justify-between my-4 md:my-7">
         <UnifeedLogo />
@@ -13,4 +13,4 @@ const LogoBar = ({ children }: { children?: React.ReactNode }) => (
 )
 
 
-export { LogoBar }
+export { Header }
