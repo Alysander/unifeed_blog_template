@@ -19,8 +19,8 @@ const Header = () => {
                     3) Scale up height when it's open and add on appropriate margin above it
                     4) Prevent it overflowing on md screens and closed state styling (extra margin, opacity, height)
                       */}
-                <NavList className={"md:mt-unset min-w-full md:min-w-min " +
-                    " md:opacity-100 md:scale-y-100 md:h-auto md:transition-none" +
+                <NavList className={" min-w-full " +
+                    " md:min-w-min md:mt-unset md:opacity-100 md:scale-y-100 md:h-auto md:transition-none" +
                     " transform transition ease-in duration-200 origin-top " +
                     (
                         mobileMenuOpen ? "mt-2 opacity-100 scale-y-100 h-auto"
