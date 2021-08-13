@@ -39,7 +39,7 @@ const NavList = ({ className }: { className: string }) => (
     </nav >
 )
 const ListLink = ({ children }: { children: ReactNode }) => (
-    <a href="#" className="self-center">
+    <a href="#" className="self-center hover:text-orange">
         <li>{children}</li>
     </a>
 )
