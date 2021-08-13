@@ -31,7 +31,7 @@ const NavList = ({ className }: { className: string }) => (
             <ListLink>Features</ListLink>
             <ListLink>Pricing</ListLink>
             <ListLink>
-                <button className="rounded-lg bg-orange text-black font-semibold px-2 py-1">
+                <button className="rounded-lg bg-orange hover:bg-lightOrange text-black font-semibold px-2 py-1">
                     Subscribe
                 </button>
             </ListLink>

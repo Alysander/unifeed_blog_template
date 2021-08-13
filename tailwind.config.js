@@ -24,6 +24,7 @@ module.exports = {
       white: colors.white,
       gray: colors.trueGray,
       orange: "#ee7c0d",
+      lightOrange: "#ee9a0d",
       mediumGray: "#656565",
     },
   },
